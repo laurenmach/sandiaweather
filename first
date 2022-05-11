@@ -5,7 +5,10 @@
 <h1 id="greet"></h1>
 <h2>It's <span id="now"></span></h2>
 
+<img id="stars" style="display:none" src="pic_bulboff.gif" style="width:100px">
+
 <script>
+//greeting
 const hour = new Date().getUTCHours();
 let greeting;
 if (hour <= 1) {
@@ -25,8 +28,22 @@ document.getElementById("greet").innerHTML = greeting;
 </script>
 
 <script>
+//timestamp
 const d = new Date();
 document.getElementById("now").innerHTML = d;
+</script>
+
+<script>
+//starsvisibility
+const time = new Date().getUTCHours();
+let stars;
+if (time < 4) {
+  stars = document.getElementById('stars').style.display='none';
+} else if (time <= 12) {
+  stars = document.getElementById('stars').style.display='block';
+} else {
+  stars = document.getElementById('stars').style.display='none';
+}
 </script>
 
 
