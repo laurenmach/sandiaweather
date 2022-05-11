@@ -1,0 +1,34 @@
+https://www.w3schools.com/js/js_intro.asp
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<img id="mountain" style="display:block" src="pic_bulbon.gif" style="width:100px">
+
+
+
+<script>
+const a = new Date().getUTCHours();
+let sandias;
+if (a <= 1) {
+  sandias = document.getElementById('mountain').src='pic_bulboff.gif';
+} else if (a = 2) {
+  sandias = document.getElementById('mountain').src='pic_bulboff.gif';
+} else if (a = 3) {
+  sandias = document.getElementById('mountain').src='pic_bulboff.gif';
+} else if (a <= 11) {
+  sandias = document.getElementById('mountain').src='pic_bulboff.gif';
+} else if (a = 12) {
+  sandias = document.getElementById('mountain').src='pic_bulboff.gif';
+} else {
+  sandias = document.getElementById('mountain').src='pic_bulboff.gif';
+}
+</script>
+
+</body>
+</html> 
