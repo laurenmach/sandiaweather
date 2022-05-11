@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="greet"></h1>
+<h2>It's <span id="now"></span></h2>
+
+<script>
+const hour = new Date().getUTCHours();
+let greeting;
+if (hour <= 1) {
+  greeting = "Good evening";
+} else if (hour <= 5) {
+  greeting = "Good night";
+} else if (hour <= 9) {
+  greeting = "Hello there";
+} else if (hour <= 17) {
+  greeting = "Good morning";
+} else if (hour <= 22) {
+  greeting = "Good afternoon";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("greet").innerHTML = greeting;
+</script>
+
+<script>
+const d = new Date();
+document.getElementById("now").innerHTML = d;
+</script>
+
+
+
+</body>
+</html>
